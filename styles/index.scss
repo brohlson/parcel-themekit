@@ -4,6 +4,10 @@
     align-items: flex-end;
     justify-content: flex-end;
     background: grey;
+
+    .bar {
+        content: 'hey look a nested rule';
+    }
 }
 
 .hidden {

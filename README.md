@@ -2,7 +2,7 @@
 
 This project is based on a great [Medium post from Dan Webb](https://medium.com/@danwebb/better-shopify-theme-development-with-parcel-js-704f17f367fc). I've grown pretty frustrated with trying to use both Slate V0 & Slate V1, both of which seem to have lost all ongoing development support at Shopify. Alas, the starter files you need to get a custom theme up and running are pretty slim.
 
-Parcel bundler helps us to use some more modern development techniques & build for a wide variety of browsers using PostCSS & Babel.
+Parcel bundler helps us to use some more modern development techniques & build for a wide variety of browsers using PostCSS & Babel. Some notable depedencies are `babel-polyfill` and `jquery` - as from what I understand, jQuery is required to interact with some of Shopify's client APIs.
 
 ## Setup
 
