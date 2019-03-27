@@ -8,7 +8,7 @@ Parcel bundler helps us to use some more modern development techniques & build f
 
 - Run `git clone https://github.com/brohlson/parcel-themekit.git MY_THEME_NAME`
 - Run `sudo npm i -g parcel-bundler`
-- Install the dependencies with either NPM or Yarn at project root `npm i || yarn`
+- Install the dependencies with Yarn at project root `yarn`
 - Create a `config.yml` file based on the example with your store credentials & connect to a theme. You can clone the starter Debut theme & then connect to the clone to make life easier.
 - Run the `dev` command to watch for changes
 - Build the production bundle files with the `build` command.
