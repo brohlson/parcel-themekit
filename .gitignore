@@ -1,7 +1,6 @@
 .cache/
 node_modules/
 package.lock
-yarn.lock
 config.yml
 
 assets/bundle.js

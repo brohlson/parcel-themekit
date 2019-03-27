@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "concurrently \"theme watch\" \"parcel watch scripts/index.js --out-dir assets --out-file bundle.js\" \"parcel watch styles/index.scss --out-dir assets --out-file style.css\"",
     "build": "parcel build scripts/index.js --out-dir assets --out-file bundle.js && parcel build styles/index.scss --out-dir assets --out-file style.css",
-    "deploy": "theme deploy"
+    "deploy": "yarn build && theme deploy"
   },
   "devDependencies": {
     "sass": "^1.17.3"
