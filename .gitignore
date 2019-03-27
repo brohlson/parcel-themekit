@@ -3,9 +3,9 @@ node_modules/
 package.lock
 config.yml
 
-assets/bundle.js
-assets/bundle.map
-assets/style.css
-assets/style.js
-assets/style.map
+assets/bundle.min.js
+assets/bundle.min.map
+assets/style.min.css
+assets/style.min.js
+assets/style.min.map
 

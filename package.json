@@ -18,8 +18,8 @@
     "uglify-js": "^3.5.2"
   },
   "scripts": {
-    "dev": "concurrently \"theme watch\" \"parcel watch scripts/index.js --out-dir assets --out-file bundle.js\" \"parcel watch styles/index.scss --out-dir assets --out-file style.css\"",
-    "build": "parcel build scripts/index.js --out-dir assets --out-file bundle.js && parcel build styles/index.scss --out-dir assets --out-file style.css",
+    "dev": "concurrently \"theme watch\" \"parcel watch scripts/index.js --out-dir assets --out-file bundle.min.js\" \"parcel watch styles/index.scss --out-dir assets --out-file style.min.css\"",
+    "build": "parcel build scripts/index.js --out-dir assets --out-file bundle.min.js && parcel build styles/index.scss --out-dir assets --out-file style.min.css",
     "deploy": "yarn build && theme deploy"
   },
   "devDependencies": {
