@@ -1,0 +1,6 @@
+development:
+  password: MY_PRIVATE_APP_PASSWORD
+  theme_id: "MY_THEME_ID"
+  store: MY-STORE.myshopify.com
+  ignore_files:
+    - config/settings_data.json # So you don't overwrite theme settings made from the Shopify Admin
