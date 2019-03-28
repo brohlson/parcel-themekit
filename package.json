@@ -19,7 +19,7 @@
   },
   "scripts": {
     "dev": "concurrently \"theme watch\" \"parcel watch scripts/index.js --out-dir assets --out-file bundle.min.js\" \"parcel watch styles/index.scss --out-dir assets --out-file style.min.css\"",
-    "build": "parcel build scripts/index.js --out-dir assets --out-file bundle.min.js && parcel build styles/index.scss --out-dir assets --out-file style.min.css",
+    "build": "parcel build scripts/index.js --out-dir assets --out-file bundle.min.js --no-source-maps && parcel build styles/index.scss --out-dir assets --out-file style.min.css --no-source-maps",
     "deploy": "yarn build && theme deploy"
   },
   "devDependencies": {
