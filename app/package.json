@@ -18,9 +18,9 @@
     "uglify-js": "^3.5.2"
   },
   "scripts": {
-    "dev": "concurrently \"theme watch\" \"parcel watch scripts/index.js --out-dir assets --out-file bundle.min.js\" \"parcel watch styles/index.scss --out-dir assets --out-file style.min.css\"",
-    "build": "parcel build scripts/index.js --out-dir assets --out-file bundle.min.js --no-source-maps && parcel build styles/index.scss --out-dir assets --out-file style.min.css --no-source-maps",
-    "deploy": "yarn build && theme deploy"
+    "dev": "concurrently \"parcel watch scripts/index.js --out-dir ../assets --out-file bundle.min.js\" \"parcel watch styles/index.scss --out-dir ../assets --out-file style.min.css\" \"cd .. && theme watch\" ",
+    "build": "parcel build scripts/index.js --out-dir ../assets --out-file bundle.min.js --no-source-maps && parcel build styles/index.scss --out-dir ../assets --out-file style.min.css --no-source-maps",
+    "deploy": "yarn && yarn build && rm -rf ./node_modules && cd .. && theme deploy"
   },
   "devDependencies": {
     "sass": "^1.17.3"
