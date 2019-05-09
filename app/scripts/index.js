@@ -1,12 +1,11 @@
+// Global
 import "babel-polyfill";
-const jquery = require("jquery");
+import jquery from "jquery";
 window.$ = window.jQuery = jquery;
 
-const foo = () => {
-  console.log("bar");
-  $("a").addClass("myClass");
-};
+// Modules
+import search from "./modules/search";
 
 $(document).ready(function() {
-  foo();
+  search.init();
 });

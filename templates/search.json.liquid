@@ -1,0 +1,19 @@
+{% layout none %}
+{% paginate search.results by 99 %}
+{% capture results %}
+  {% for item in search.results %}
+    {
+      "title": {{ item.title | highlight: search.terms | json }},
+      "url": {{ item.url | within: item.collections.last | json }},
+      "handle": {{ item.handle | json }},
+      "price": {{ item.price | json }},
+      "featured_image": {{ item.featured_image.src | json }}
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+{% endcapture %}
+{
+  "count": {{ search.results_count }},
+  "results": [{{ results }}]
+}
+{% endpaginate %}
