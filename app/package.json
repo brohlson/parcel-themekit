@@ -20,7 +20,8 @@
   "scripts": {
     "dev": "concurrently \"parcel watch scripts/index.js --out-dir ../assets --out-file bundle.min.js\" \"parcel watch styles/index.scss --out-dir ../assets --out-file style.min.css\" \"cd .. && theme watch\" ",
     "build": "parcel build scripts/index.js --out-dir ../assets --out-file bundle.min.js --no-source-maps && parcel build styles/index.scss --out-dir ../assets --out-file style.min.css --no-source-maps",
-    "deploy": "yarn && yarn build && rm -rf ./node_modules && cd .. && theme deploy"
+    "clean": "rm -rf ./node_modules && rm -rf /.cache && rm -rf ../.cache && rm -rf ../assets/bundle.min.map && rm -rf ../assets/style.min.js && rm -rf ../assets/style.min.map",
+    "deploy": "yarn && yarn build && yarn clean && cd .. && theme deploy"
   },
   "devDependencies": {
     "sass": "^1.17.3"
