@@ -15,3 +15,4 @@ Parcel bundler helps us to use some more modern development techniques & build f
 - Run `yarn dev` command to watch for changes
 - Build the production bundle files with `yarn build`.
 - Finally, sync the built files to your store with `yarn deploy`.
+- Simple `build` command is tested in this repo via Circle CI. Settings could be extended to test whatever you need.
