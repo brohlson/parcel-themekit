@@ -1,0 +1,29 @@
+{
+  "name": "parcel-themekit",
+  "version": "1.0.0",
+  "description": "Parcelized version of Shopify Themekit",
+  "main": "index.js",
+  "author": "Chase Ohlson",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "jquery": "^3.3.1",
+    "postcss": "^7.0.14",
+    "terser": "^3.17.0",
+    "uglify-js": "^3.5.2"
+  },
+  "scripts": {
+    "dev": "concurrently \"parcel watch app/scripts/index.js --out-dir ./assets --out-file bundle.min.js\" \"parcel watch app/styles/index.scss --out-dir ./assets --out-file style.min.css\" \"theme watch\" ",
+    "build": "parcel build app/scripts/index.js --out-dir ./assets --out-file bundle.min.js --no-source-maps && parcel build app/styles/index.scss --out-dir ./assets --out-file style.min.css --no-source-maps",
+    "clean": "rm -rf ./node_modules && rm -rf /.cache && rm -rf ./assets/bundle.min.map && rm -rf ./assets/style.min.js && rm -rf ./assets/style.min.map",
+    "deploy": "yarn && yarn build && yarn clean && theme deploy"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.17.3"
+  }
+}
