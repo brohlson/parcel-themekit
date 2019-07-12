@@ -1,7 +1,7 @@
 .cache/
 node_modules/
 package.lock
-config.yml
+./config.yml
 
 assets/bundle.min.js
 assets/bundle.min.map
