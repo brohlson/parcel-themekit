@@ -1,6 +1,6 @@
 # Parcel Themekit Starter
 
-[![CircleCI](https://circleci.com/gh/brohlson/parcel-themekit/tree/master.svg?style=svg&circle-token=618ffce7f07a7fc7cd45b5bf4e55d4f14787a3b4)]
+![CircleCI](https://circleci.com/gh/brohlson/parcel-themekit/tree/master.svg?style=svg&circle-token=618ffce7f07a7fc7cd45b5bf4e55d4f14787a3b4)
 
 This project is based on a great [Medium post from Dan Webb](https://medium.com/@danwebb/better-shopify-theme-development-with-parcel-js-704f17f367fc). I've grown pretty frustrated with trying to use both Slate V0 & Slate V1, both of which seem to have lost all ongoing development support at Shopify. Alas, the starter files you need to get a custom theme up and running are pretty slim.
 
