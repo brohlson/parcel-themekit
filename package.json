@@ -14,7 +14,7 @@
     "jquery": "^3.3.1",
     "parcel-bundler": "^1.12.4",
     "postcss": "^7.0.26",
-    "terser": "^4.4.2",
+    "terser": "^4.6.5",
     "uglify-js": "^3.7.2"
   },
   "scripts": {
