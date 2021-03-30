@@ -15,7 +15,7 @@
     "parcel-bundler": "^1.12.4",
     "postcss": "^7.0.26",
     "terser": "^4.4.2",
-    "uglify-js": "^3.7.2"
+    "uglify-js": "^3.13.3"
   },
   "scripts": {
     "dev": "concurrently \"parcel watch app/scripts/index.js --out-dir ./assets --out-file bundle.min.js\" \"parcel watch app/styles/index.scss --out-dir ./assets --out-file style.min.css\" \"theme watch\" ",
